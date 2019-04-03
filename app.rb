@@ -31,7 +31,7 @@ class App < Sinatra::Base
     "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
 
-  get '/:operation/:number1/:number2' 
+  get '/:operation/:number1/:number2'
 end
   do |oper,num1,num2|
   #   binding.pry
