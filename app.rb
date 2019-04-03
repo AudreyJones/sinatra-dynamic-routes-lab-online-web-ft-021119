@@ -31,7 +31,7 @@ class App < Sinatra::Base
     "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
 
-  get '/:operation/:number1/:number2' do |oper,num1,num2|
+  get '/:operation/:number1/:number2' do
     binding.pry
     @oper = params[:operation]
     @num1 = (params[:number1]).to_i
