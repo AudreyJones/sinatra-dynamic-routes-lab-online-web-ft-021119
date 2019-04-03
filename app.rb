@@ -39,12 +39,12 @@ class App < Sinatra::Base
     if @oper = "add"
       @result = @num1 + @num2
     elsif @oper = "subtract"
-      @num1 - @num2
+      @result = @num1 - @num2
     elsif @oper = "multiply"
-      @num1 * @num2
+      @result = @num1 * @num2
     elsif @oper = "divide"
-      @num1/@num2
+      @result = @num1/@num2
     end
-
+    @result
   end
 end
