@@ -16,8 +16,9 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @number = (params[:number]).to_i
     binding.pry
-    @number.times do
+    @result = @number.times do
       "#{@phrase}"
     end
+    @result
   end
 end
