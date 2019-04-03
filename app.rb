@@ -37,7 +37,7 @@ class App < Sinatra::Base
     @num2 = (params[:number2]).to_i
     if @oper = "add"
       @num1 + @num2
-    when @oper = "subtract"
+    if @oper = "subtract"
       return @num1 - @num2
     when @oper = "multiply"
       return @num1 * @num2
