@@ -34,8 +34,13 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do |oper,num1,num2|
     @oper = params[:operation]
     binding.pry
+    case @oper
+    when @oper == "add"
+      @oper = '+'.to_sym
+    when condition
+      
     @num1 = (params[:number1]).to_i
     @num2 = (params[:number2]).to_i
-
+    @num1.public_send
   end
 end
