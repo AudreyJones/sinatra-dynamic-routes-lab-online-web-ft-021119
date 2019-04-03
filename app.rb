@@ -35,11 +35,7 @@ class App < Sinatra::Base
     @oper = params[:operation]
     @num1 = (params[:number1]).to_i
     @num2 = (params[:number2]).to_i
-    # binding.pry
-    case @oper
-    when @oper == "add"
-      @oper = '+'.to_sym
-    end
+    
 binding.pry
     @num1(@oper)@num2
   end
