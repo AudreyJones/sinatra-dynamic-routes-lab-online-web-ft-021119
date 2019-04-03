@@ -17,7 +17,7 @@ class App < Sinatra::Base
     @number = (params[:number]).to_i
     binding.pry
     empty = ""
-    @result = @number.times {@phrase}
-    @result
+    @number.times {@phrase}
+
   end
 end
