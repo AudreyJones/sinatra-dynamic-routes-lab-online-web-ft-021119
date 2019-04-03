@@ -38,13 +38,13 @@ class App < Sinatra::Base
 binding.pry
     case @oper
     when @oper = "add"
-      @num1 + @num2
+      return @num1 + @num2
     when @oper = "subtract"
-      @num1 - @num2
+      return @num1 - @num2
     when @oper = "multiply"
-      @num1 * @num2
+      return @num1 * @num2
     when @oper = "divide"
-      @num1/@num2
+      return @num1/@num2
     end
   end
 end
