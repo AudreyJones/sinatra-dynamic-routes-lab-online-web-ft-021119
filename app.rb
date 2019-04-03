@@ -16,6 +16,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @number = (params[:number]).to_i
     i = 0
+    binding.pry
     @result until i == @number
       @phrase
       i += 1
