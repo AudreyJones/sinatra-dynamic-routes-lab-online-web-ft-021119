@@ -39,7 +39,7 @@ class App < Sinatra::Base
     case @oper
     when @oper == "add"
       @oper = '+'.to_sym
-
+    end
 binding.pry
     @num1(@oper)@num2
   end
