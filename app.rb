@@ -41,7 +41,7 @@ class App < Sinatra::Base
     elsif @oper = "subtract"
       binding.pry
       @result = @num1-@num2
-      
+
     elsif @oper = "multiply"
       @result = @num1 * @num2
     elsif @oper = "divide"
