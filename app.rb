@@ -15,11 +15,8 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do |number,phrase|
     @phrase = params[:phrase]
     @number = (params[:number]).to_i
-    i = 0
     binding.pry
-    @result until i == @number
-      @phrase
-      i += 1
+    @result = @number.times {@phrase}
     @result
   end
 end
