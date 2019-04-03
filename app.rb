@@ -18,7 +18,7 @@ class App < Sinatra::Base
     binding.pry
     @empty = ""
     @number.times do
-      @empty += @phrase
+      @empty = @empty + @phrase
       @empty
     end
 
