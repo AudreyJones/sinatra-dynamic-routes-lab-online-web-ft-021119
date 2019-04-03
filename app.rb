@@ -45,6 +45,6 @@ class App < Sinatra::Base
     elsif @oper = "divide"
       @num1/@num2
     end
-    
+
   end
 end
