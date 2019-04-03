@@ -33,13 +33,13 @@ class App < Sinatra::Base
 
   get '/:operation/:number1/:number2'
   end
-  # do |oper,num1,num2|
-  #   binding.pry
-  #   @oper = params[:operation]
-  #   @num1 = (params[:number1]).to_i
-  #   @num2 = (params[:number2]).to_i
-  #
-  #
-  #   @num1(@oper)@num2
-  # end
+  do |oper,num1,num2|
+    binding.pry
+    @oper = params[:operation]
+    @num1 = (params[:number1]).to_i
+    @num2 = (params[:number2]).to_i
+  
+  
+    @num1(@oper)@num2
+  end
 end
